@@ -31,14 +31,14 @@ C:\Git\usecases\web scraping\web_scraping_case_4.py
 | [web_scraping_beautifoul_soup_case_3](https://github.com/catpersec/usecases/blob/main/web%20scraping%20-%20web%20interaction/web_scraping_beautifoul_soup_case_3.py) | web-scraping, BeautifulSoup, list comprehension, 100DoC-d46 | In this particular usecase I strugggled a while with list comprehension.  |
 | [web_scraping_beautifoul_soup_case_4](https://github.com/catpersec/usecases/blob/main/web%20scraping%20-%20web%20interaction/web_scraping_beautifoul_soup_case_4.py) | web-scraping, BeautifulSoup, requests module, 100DoC-d47 | Case with headers in request embedded. |
 | [web_scraping_web_interaction_selenium_case_1](https://github.com/catpersec/usecases/blob/main/web%20scraping%20-%20web%20interaction/web_scraping_web_interaction_selenium_case_1.py) | web-scraping, Selenium module, web-interaction, local-files, 100DoC-d48, time  | Great usecases of Selenium (both scraping data from website and interacting with website).  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| [decorator_function - case 1 - basic](link) | decorator function, 100DoC-d54 | Case with step by step decorator function implementation. |
+| [decorator_function - case 2 - flask case](link) | decorator function, Flask, 100DoC-d54 | Decorator function case with example of use in Flask framework. |
+| [decorator_function - case 3 - time measure case](link) | decorator function, 100DoC-d54 | Decorator function case where decorator function measures how long did it take function to run. |
+| [link_title](link) | tags | note |
+| [link_title](link) | tags | note |
+| [link_title](link) | tags | note |
+| [link_title](link) | tags | note |
+| [link_title](link) | tags | note |
 
 ## Other
 
