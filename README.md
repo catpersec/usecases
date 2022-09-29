@@ -34,11 +34,19 @@ C:\Git\usecases\web scraping\web_scraping_case_4.py
 | [decorator_function - case 1 - basic](https://github.com/catpersec/usecases/blob/main/python%20basics/decorator_function%20-%20case%201%20-%20basic.py) | decorator function | Case with step by step decorator function implementation. **(Course 100 Days of Code - Day 54)**|
 | [decorator_function - case 2 - flask case](https://github.com/catpersec/usecases/blob/main/python%20basics/decorator_function%20-%20case%202%20-%20flask%20case.py) | decorator function, Flask | Decorator function case with example of use in Flask framework. **(Course 100 Days of Code - Day 54)** |
 | [decorator_function - case 3 - time measure case](https://github.com/catpersec/usecases/blob/main/python%20basics/decorator_function%20-%20case%203%20-%20time%20measure%20case.py) | decorator function | Decorator function case where decorator function measures how long did it take function to run. **(Course 100 Days of Code - Day 54)** |
+| [decorator_function_advanced - case 1 - passing arguments from address bar to program](link) | advanced decorator function, Flask | Pass variable from address bar to the program. Returning passed variable as a string on the website. Turned on "Debug mode" so website server restarts with every change so client see the changes immediately |
+| [decorator_function_advanced - case 2 - simple authentication example](link) | advanced decorator function | Advanced Decorators with *args and **kwargs. Case with simple authentication example. |
+| [decorator_function_advanced - case 3 - args and kwargs case](link) | advanced decorator function, *args, **kwargs, OOP, authentication | Passing function arguments to the decorator function step by step. |
+| [decorator_function_advanced - case 4 - logging decorator case](link) | advanced decorator function, *args, **kwargs | Passing function arguments to the decorator function example. |
 <!-- | [link_title](link) | tags | note |
 | [link_title](link) | tags | note |
 | [link_title](link) | tags | note |
 | [link_title](link) | tags | note |
+| [link_title](link) | tags | note |
 | [link_title](link) | tags | note | -->
+
+
+
 
 ## Other
 
