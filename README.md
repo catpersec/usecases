@@ -152,20 +152,18 @@ $FoodToEat = $BaconIsYummy ? 'bacon' : 'beets'            # Sets the $FoodToEat 
 
 ## Formatting output (Format-Table, Format-List, -AutoSize)
 ```powershell
-
-
+Get-Date | Format-List
+Get-Date | Format-List -Property Month, Day, Hour, Minute, Millisecond
 ```
-
-## Regular expressions (regex)
+![[usecases/MardownResources/Pasted image 20221016213533.png]]
 ```powershell
-'Trevor' -match '^T\w*'                                   # Perform a regular expression match against a string value. # Returns $true and populates $matches variable
-$matches[0]                                               # Returns 'Trevor', based on the above match
-
-@('Trevor', 'Billy', 'Bobby') -match '^B'                 # Perform a regular expression match against an array of string values. Returns Billy, Bobby
-
-$regex = [regex]'(\w{3,8})'
-$regex.Matches('Trevor Bobby Dillon Joe Jacob').Value     # Find multiple matches against a singleton string value.
+Get-Date | Format-Table -Property Month, Day, Hour, Minute, Millisecond
 ```
+![[usecases/MardownResources/Pasted image 20221016213423.png]]
+```powershell
+![[usecases/MardownResources/Pasted image 20221016213912.png]]
+```
+![[usecases/MardownResources/Pasted image 20221016213859.png]]
 ## Flow Control (if, for, foreach, while, switch)
 ```powershell
 if (1 -eq 1) { }                                          # Do something if 1 is equal to 1
