@@ -151,19 +151,26 @@ $FoodToEat = $BaconIsYummy ? 'bacon' : 'beets'            # Sets the $FoodToEat 
 ```
 
 ## Formatting output (Format-Table, Format-List, -AutoSize)
+
 ```powershell
 Get-Date | Format-List
 Get-Date | Format-List -Property Month, Day, Hour, Minute, Millisecond
 ```
-![[usecases/MardownResources/Pasted image 20221016213533.png]]
+
+![[usecases/MardownResources/README-2.png]]
+
 ```powershell
 Get-Date | Format-Table -Property Month, Day, Hour, Minute, Millisecond
 ```
-![[usecases/MardownResources/Pasted image 20221016213423.png]]
+
+![[usecases/MardownResources/README.png]]
+
 ```powershell
-![[usecases/MardownResources/Pasted image 20221016213912.png]]
+Get-Process | Format-Wide -Column 6
 ```
-![[usecases/MardownResources/Pasted image 20221016213859.png]]
+
+![[usecases/MardownResources/README-1.png]]
+
 ## Flow Control (if, for, foreach, while, switch)
 ```powershell
 if (1 -eq 1) { }                                          # Do something if 1 is equal to 1
