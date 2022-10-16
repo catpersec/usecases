@@ -156,19 +156,19 @@ Get-Date | Format-List
 Get-Date | Format-List -Property Month, Day, Hour, Minute, Millisecond
 ```
 
-![](https://raw.githubusercontent.com/catpersec/usecases/MardownResources/README-2.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/main/MardownResources/README-2.png)
 
 ```powershell
 Get-Date | Format-Table -Property Month, Day, Hour, Minute, Millisecond
 ```
 
-![](https://raw.githubusercontent.com/catpersec/usecases/MardownResources/README.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/main/MardownResources/README.png)
 
 ```powershell
 Get-Process | Format-Wide -Column 6
 ```
 
-![](https://raw.githubusercontent.com/catpersec/usecases/main/MardownResources/README-1.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/main/main/MardownResources/README-1.png)
 
 ## Flow Control (if, for, foreach, while, switch)
 ```powershell
