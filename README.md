@@ -168,7 +168,7 @@ Get-Date | Format-Table -Property Month, Day, Hour, Minute, Millisecond
 Get-Process | Format-Wide -Column 6
 ```
 
-![](https://raw.githubusercontent.com/catpersec/usecases/main/main/MardownResources/README-1.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/main/MardownResources/README-1.png)
 
 ## Flow Control (if, for, foreach, while, switch)
 ```powershell
