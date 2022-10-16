@@ -15,7 +15,6 @@ Simple way to keep track what I learned.
   - [Basics](#basics)
   - [Assing, Compare Operators](#assing-compare-operators)
   - [Formatting output (Format-Table, Format-List, -AutoSize)](#formatting-output-format-table-format-list--autosize)
-  - [Regular expressions (regex)](#regular-expressions-regex)
   - [Flow Control (if, for, foreach, while, switch)](#flow-control-if-for-foreach-while-switch)
   - [Variables](#variables)
   - [Functions (functions definition)](#functions-functions-definition)
@@ -157,19 +156,19 @@ Get-Date | Format-List
 Get-Date | Format-List -Property Month, Day, Hour, Minute, Millisecond
 ```
 
-![](usecases/MardownResources/README-2.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/MardownResources/README-2.png)
 
 ```powershell
 Get-Date | Format-Table -Property Month, Day, Hour, Minute, Millisecond
 ```
 
-![](usecases/MardownResources/README.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/MardownResources/README.png)
 
 ```powershell
 Get-Process | Format-Wide -Column 6
 ```
 
-![](usecases/MardownResources/README-1.png)
+![](https://raw.githubusercontent.com/catpersec/usecases/main/MardownResources/README-1.png)
 
 ## Flow Control (if, for, foreach, while, switch)
 ```powershell
