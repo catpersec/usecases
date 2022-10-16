@@ -1,7 +1,6 @@
 # usecases <!-- omit in toc -->
 Simple way to keep track what I learned.
 
-- [Markdown](#markdown)
 - [Python](#python)
   - [Main table](#main-table)
   - [Other](#other)
@@ -15,7 +14,8 @@ Simple way to keep track what I learned.
       - [Setting Environment Variables](#setting-environment-variables)
 - [Powershell](#powershell)
   - [Basics](#basics)
-  - [Operators](#operators)
+  - [Assing, Compare Operators](#assing-compare-operators)
+  - [Formatting output (Format-Table, Format-List, -AutoSize)](#formatting-output-format-table-format-list--autosize)
   - [Regular expressions (regex)](#regular-expressions-regex)
   - [Flow Control (if, for, foreach, while, switch)](#flow-control-if-for-foreach-while-switch)
   - [Variables](#variables)
@@ -30,12 +30,29 @@ Simple way to keep track what I learned.
     - [Register for filesystem events](#register-for-filesystem-events)
   - [Perform a task on a timer (ie. every 5000 milliseconds)](#perform-a-task-on-a-timer-ie-every-5000-milliseconds)
   - [PowerShell Drives (PSDrives)](#powershell-drives-psdrives)
-  - [Data Management (sort, whre, group object)](#data-management-sort-whre-group-object)
+  - [Data Management (sort-object, where-object, group-object)](#data-management-sort-object-where-object-group-object)
+- [Markdown](#markdown)
 
 
-# Markdown
-+ [Markdown cheatsheet](https://www.w3schools.io/file/markdown-cheatsheet/)
-C:\Git\usecases\web scraping\web_scraping_case_4.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,6 +142,35 @@ $env:[variable_name] = '[variable_value]'
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Powershell
 ALL CREDITS TO: [[https://gist.github.com/pcgeek86]]
 ## Basics
@@ -139,7 +185,7 @@ Get-Help -Name about_Variables                            # Get help for a speci
 Get-Help -Name Get-Command                                # Get help for a specific PowerShell function
 Get-Help -Name Get-Command -Parameter Module              # Get help for a specific parameter on a specific command
 ```
-## Operators
+## Assing, Compare Operators
 ```powershell
 $a = 2                                                    # Basic variable assignment operator
 $a += 1                                                   # Incremental assignment operator
@@ -155,6 +201,12 @@ $FirstName -like 'T*'                                     # Perform string compa
 
 $BaconIsYummy = $true
 $FoodToEat = $BaconIsYummy ? 'bacon' : 'beets'            # Sets the $FoodToEat variable to 'bacon' using the ternary operator
+```
+
+## Formatting output (Format-Table, Format-List, -AutoSize)
+```powershell
+
+
 ```
 
 ## Regular expressions (regex)
@@ -330,10 +382,37 @@ Set-Location -Path videos:                                  # Switch into PSDriv
 Remove-PSDrive -Name xyz                                    # Delete a PSDrive
 ```
 
-## Data Management (sort, whre, group object)
+## Data Management (sort-object, where-object, group-object)
 ```powershell
 Get-Process | Group-Object -Property Name                   # Group objects by property name
 Get-Process | Sort-Object -Property Id                      # Sort objects by a given property name
 Get-Process | Where-Object -FilterScript { $PSItem.Name -match '^c' } # Filter objects based on a property matching a value
 gps | where Name -match '^c'                                # Abbreviated form of the previous statement
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Markdown
++ [Markdown cheatsheet](https://www.w3schools.io/file/markdown-cheatsheet/)
+C:\Git\usecases\web scraping\web_scraping_case_4.py
