@@ -11,6 +11,8 @@ Simple way to keep track what I learned.
       - [List All Environment Variables](#list-all-environment-variables)
       - [Check A Specific Environment Variable](#check-a-specific-environment-variable)
       - [Setting Environment Variables](#setting-environment-variables)
+    - [Cases](#cases)
+      - [Copy folder / file with permissions](#copy-folder--file-with-permissions)
 - [Powershell](#powershell)
   - [Basics](#basics)
   - [Assing, Compare Operators](#assing-compare-operators)
@@ -117,6 +119,20 @@ setx [variable_name] "[variable_value]"
 + POWERSHELL
 ```powershell
 $env:[variable_name] = '[variable_value]'
+```
+
+### Cases
+
+#### Copy folder / file with permissions
+- using ROBOCOPY
+```powershell
+**ROBOCOPY** **<source> <target> /MIR /SEC /SECFIX**
+```
+example:
+```powershell
+ROBOCOPY '\\server\folder' '\\server\folder_2' /MIR /SEC /SECFIX
+# case will copy (mirror) contents of the 'folder' to 'folder_2'
+# with all permissions
 ```
 
 # Powershell
