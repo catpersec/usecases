@@ -1,35 +1,6 @@
 Simple way to keep track what I learned.
 
-- [Python](#python)
-  - [Main table](#main-table)
-  - [Other](#other)
-    - [sort() vs sorted](#sort-vs-sorted)
-    - [List comprehension](#list-comprehension)
-- [Operating Systems](#operating-systems)
-  - [Windows](#windows)
-    - [Environment Variables](#environment-variables)
-      - [List All Environment Variables](#list-all-environment-variables)
-      - [Check A Specific Environment Variable](#check-a-specific-environment-variable)
-      - [Setting Environment Variables](#setting-environment-variables)
-- [Powershell](#powershell)
-  - [Basics](#basics)
-  - [Assing, Compare Operators](#assing-compare-operators)
-  - [Formatting output (Format-Table, Format-List, -AutoSize)](#formatting-output-format-table-format-list--autosize)
-  - [Flow Control (if, for, foreach, while, switch)](#flow-control-if-for-foreach-while-switch)
-  - [Variables](#variables)
-  - [Functions (functions definition)](#functions-functions-definition)
-  - [Modules (powershell modules)](#modules-powershell-modules)
-    - [Working with modules](#working-with-modules)
-    - [Module managment](#module-managment)
-  - [Filesystem (working with local files)](#filesystem-working-with-local-files)
-  - [Hashtables (Powershell Dictionary)](#hashtables-powershell-dictionary)
-  - [Windows Management Instrumentation (WMI) (Windows only)](#windows-management-instrumentation-wmi-windows-only)
-  - [Asynchronous Event Registration](#asynchronous-event-registration)
-    - [Register for filesystem events](#register-for-filesystem-events)
-  - [Perform a task on a timer (ie. every 5000 milliseconds)](#perform-a-task-on-a-timer-ie-every-5000-milliseconds)
-  - [PowerShell Drives (PSDrives)](#powershell-drives-psdrives)
-  - [Data Management (sort-object, where-object, group-object)](#data-management-sort-object-where-object-group-object)
-- [Markdown](#markdown)
+[TOC]
 
 # Python
 
@@ -213,6 +184,11 @@ Remove-Variable -Name firstname                           # Remove a variable, w
 Remove-Variable -Name firstname -Force                    # Remove a variable, with the specified name, that has the "ReadOnly" option set
 ```
 
+## Environmental Variables (@computer name)
+```powershell
+$env:computername
+```
+
 ## Functions (functions definition)
 ```powershell
 function add ($a, $b) { $a + $b }                         # A basic PowerShell function
@@ -341,6 +317,11 @@ Get-Process | Where-Object -FilterScript { $PSItem.Name -match '^c' } # Filter o
 gps | where Name -match '^c'                                # Abbreviated form of the previous statement
 ```
 
+## Storing script location to variable (script location, script directory, current location)
+```powershell
+$rootDir = [System.IO.Path]::GetDirectoryName($MyInvocation.MyCommand.Path)
+```
+
 # Markdown
 + [Markdown cheatsheet](https://www.w3schools.io/file/markdown-cheatsheet/)
-C:\Git\usecases\web scraping\web_scraping_case_4.py
+
