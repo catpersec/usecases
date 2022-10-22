@@ -14,6 +14,8 @@ Simple way to keep track what I learned.
     - [Cases](#cases)
       - [Copy folder / file with permissions](#copy-folder--file-with-permissions)
 - [Powershell](#powershell)
+  - [Cases](#cases-1)
+    - [Force Write-Host to show before Read-Host](#force-write-host-to-show-before-read-host)
   - [Basics](#basics)
   - [Assing, Compare Operators](#assing-compare-operators)
   - [Formatting output (Format-Table, Format-List, -AutoSize)](#formatting-output-format-table-format-list--autosize)
@@ -136,7 +138,13 @@ ROBOCOPY '\\server\folder' '\\server\folder_2' /MIR /SEC /SECFIX
 ```
 
 # Powershell
-ALL CREDITS TO: [[https://gist.github.com/pcgeek86]]
+CREDITS TO: [[https://gist.github.com/pcgeek86]]
+## Cases
+### Force Write-Host to show before Read-Host
+```powershell
+#Using Out-Host
+Write-Host "Something" | Out-Host
+```
 ## Basics
 ```powershell
 Get-Command                                               # Retrieves a list of all the commands available to PowerShell
